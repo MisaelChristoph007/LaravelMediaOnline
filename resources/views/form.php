@@ -1,32 +1,118 @@
-<!-- resources/views/form.blade.php -->
-
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <title>Formulir Data Pengguna</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Session</title>
+  <link rel="stylesheet" type="text/css" href="form">
 </head>
 <body>
+  <form action="welcome" method="post">
+    <section>
+      <div class="container">
+        <h2>Login dulu yuk</h2>
+        <div class="row100">
+          <div class="col">
+            <div class="inputBox">
+              <input type="text" name="fname" required id="firstname">
+              <span class="text">First Name</span>
+              <span class="line"></span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="inputBox">
+              <input type="text" name="lname" required id="lastname">
+              <span class="text">Last Name</span>
+              <span class="line"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row100">
+          <div class="col">
+            <div class="inputBox">
+              <input type="text" name="" required id="email">
+              <span class="text">Email</span>
+              <span class="line"></span>
+            </div>
+          </div>
 
-<h2>Formulir Data Pengguna</h2>
-<form method="post" action="welcome">
+          <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
 
-    <label for="first_name">Nama Depan:</label><br>
-    <input type="text" id="first_name" name="first_name"><br><br>
+          <script src="https://code.jquery.com/jquery-3.3.1.js"></script> 
+          <script src="https://cdn.rawgit.com/twbs/bootstrap/v4.1.3/dist/js/bootstrap.bundle.min.js"></script> 
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cascading-dropdown/1.2.9/jquery.cascadingdropdown.min.js"></script>
 
-    <label for="last_name">Nama Belakang:</label><br>
-    <input type="text" id="last_name" name="last_name"><br><br>
+          <div class="row100">
+            <div class="col">
+              <span class="text">Kebangsaan</span>
+              <select class="form-control step1">
+                <option value="">Indonesia</option>
+                <option>Karawang</option>
+                <option>Korut</option>
+                <option>Dengklok</option>
+              </select>
+            </div>
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email"><br><br>
-
-    <label for="gender">Jenis Kelamin:</label><br>
-    <select id="gender" name="gender">
-        <option value="male">Laki-laki</option>
-        <option value="female">Perempuan</option>
-    </select><br><br>
-
-    <input type="submit" value="Submit">
-</form>
-
-</body>
-</html>
+            <div class="row100">
+              <div class="col-left">
+                <span class="text">Logat</span>
+                <div>
+                  <input id="box1" type="checkbox" />
+                  <label for="box1">Jawir</label>
+                  <input id="box2" type="checkbox" />
+                  <label for="box2">Sunda</label>
+                  <input id="box3" type="checkbox" />
+                  <label for="box3">Alien</label>
+                </div>
+              </div>
+            </div>
+            <div class="row100">
+              <div class="col">
+                <span class="text">Jenis Kelamin</span>
+                <br>
+                <input type="radio" name="checkbox" class="check" id="radio1" checked/>
+                <label for="radio1">
+                  <div class="container">
+                    <div class="cRadioBtn">
+                    </div>
+                  </div>
+                  <h3>Lanang</h3>
+                </label>
+                <input type="radio" name="checkbox" class="check" id="radio2" />
+                <label for="radio2">
+                  <div class="container">
+                    <div class="cRadioBtn">
+                    </div>
+                  </div>
+                  <h3>PeremPUAN</h3>
+                </label>
+                <input type="radio" name="checkbox" class="check" id="radio3" />
+                <label for="radio3">
+                  <div class="container">
+                    <div class="cRadioBtn">
+                    </div>
+                  </div>
+                  <h3>Keduanya</h3>
+                </label>
+              </div>
+            </div>
+            <div class="row100">
+              <div class="col">
+                <div class="inputBox textarea">
+                  <textarea required="required"></textarea>
+                  <span class="text">Bio...</span>
+                  <span class="line"></span>
+                </div>
+              </div>
+            </div>
+            <div class="row100">
+              <div class="col">
+                <a href="welcome">
+                  <input type="submit" value="Send">
+                </a>
+              </div>
+            </div>
+          </div> 
+        </section>
+      </body>
+      </head>
+      </html>
