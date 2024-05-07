@@ -13,15 +13,15 @@
         <div class="row100">
           <div class="col">
             <div class="inputBox">
+              <span class="text"><b>First Name</span>
               <input type="text" name="fname" required id="firstname">
-              <span class="text">First Name</span>
               <span class="line"></span>
             </div>
           </div>
           <div class="col">
             <div class="inputBox">
-              <input type="text" name="lname" required id="lastname">
               <span class="text">Last Name</span>
+              <input type="text" name="lname" required id="lastname">
               <span class="line"></span>
             </div>
           </div>
@@ -29,8 +29,8 @@
         <div class="row100">
           <div class="col">
             <div class="inputBox">
-              <input type="text" name="" required id="email">
               <span class="text">Email</span>
+              <input type="text" name="" required id="email">
               <span class="line"></span>
             </div>
           </div>
@@ -43,7 +43,7 @@
 
           <div class="row100">
             <div class="col">
-              <span class="text">Kebangsaan</span>
+              <span class="text"><b>Kebangsaan</span>
               <select class="form-control step1">
                 <option value="">Indonesia</option>
                 <option>Karawang</option>
@@ -54,7 +54,7 @@
 
             <div class="row100">
               <div class="col-left">
-                <span class="text">Logat</span>
+                <span class="text"><b>Logat</span>
                 <div>
                   <input id="box1" type="checkbox" />
                   <label for="box1">Jawir</label>
@@ -83,7 +83,7 @@
                     <div class="cRadioBtn">
                     </div>
                   </div>
-                  <h3>PeremPUAN</h3>
+                  <h3>Perempuan</h3>
                 </label>
                 <input type="radio" name="checkbox" class="check" id="radio3" />
                 <label for="radio3">
@@ -97,9 +97,9 @@
             </div>
             <div class="row100">
               <div class="col">
+                <span class="text">Bio...</span>
                 <div class="inputBox textarea">
                   <textarea required="required"></textarea>
-                  <span class="text">Bio...</span>
                   <span class="line"></span>
                 </div>
               </div>
