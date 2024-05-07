@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -14,10 +13,12 @@ class FormController extends Controller
     public function processForm(Request $request)
     {
         $validatedData = $request->validate([
-            'first_name' => 'required',
-            'last_name' => 'required',
+            'fname' => 'required',
+            'lname' => 'required',
             'email' => 'required|email',
+            'nationality' => 'required',
             'gender' => 'required',
+            'bio' => 'required',
         ]);
 
         return view('welcome', $validatedData);

@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Selamat Datang</title>
+  <title>Welcome</title>
 </head>
 <body>
+  <h2>Selamat Datang!</h2>
+  <p>Terima kasih atas pengisian formulir.</p>
 
-<h2>Selamat Datang</h2>
-<p>Terima kasih atas pengisian formulir.</p>
-
-<h3>Data yang Anda masukkan:</h3>
-<ul>
-    <li>Nama Depan: {{ $first_name }}</li>
-    <li>Nama Belakang: {{ $last_name }}</li>
+  <h3>Data yang Anda masukkan:</h3>
+  <ul>
+    <li>Nama Depan: {{ $fname }}</li>
+    <li>Nama Belakang: {{ $lname }}</li>
     <li>Email: {{ $email }}</li>
+    <li>Kebangsaan: {{ $nationality }}</li>
     <li>Jenis Kelamin: {{ $gender }}</li>
-</ul>
-
+    <li>Bio: {{ $bio }}</li>
+  </ul>
 </body>
 </html>
