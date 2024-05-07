@@ -55,7 +55,7 @@
   <form action="{{('welcome') }}" method="get">
       <h1>Buat Akun Baru</h1>
       <h4>Sign Up Form</h4>
-
+      <form id="form.php" action="{{ url('welcome') }}" method="get">
       <label for="fname">First name:</label><br />
       <input type="text" id="fname" name="fname" required /><br /><br />
       <label for="lname">Last name:</label><br />
